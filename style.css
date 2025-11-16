@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.background {
+    background: linear-gradient(to bottom, #6d4cff 0%, #0e0b25 100%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main {
+    width: 480px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.4);
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 12px;
+}
+
+.welcome {
+    font-size: 18px;
+    margin-bottom: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.links-social {
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 12px;
+    display: block;
+    color: slateblue;
+    margin: 14px 0;
+    text-decoration: none;
+    border: 2px solid #fff;
+    transition: .3s ease;
+}
+
+/* Botões com animação */
+.links-social:hover {
+    transform: scale(1.05);
+}
+
+/* Efeitos individuais */
+.linkedin:hover {
+    color: #fff;
+    background: linear-gradient(to right, #095691 0%, #0d80d8 100%);
+}
+
+.github:hover {
+    color: #fff;
+    background: linear-gradient(to right, #975fff 0%, #673fb1 50%, #721e8b 100%);
+}
+
+.portfolio:hover {
+    color: #fff;
+    background: linear-gradient(to right, #0a8a68 0%, #09b083 100%);
+}
+
+.curriculo:hover {
+    color: #fff;
+    background: linear-gradient(to right, #e35398 0%, #7D4BF8 50%, #1290ff 100%);
+}
+
+.whatsapp:hover {
+    color: #fff;
+    background: linear-gradient(to right, #1adb35 0%, #05bd1e 100%);
+}
+
+footer {
+    padding: 25px 0;
+}
+
+footer .copyright {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 560px) {
+    main {
+        width: 95%;
+    }
+}
+
+@media (max-width: 393px) {
+    main {
+        padding: 30px 0;
+    }
+}
